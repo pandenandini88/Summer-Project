@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+# maps the pages onto their respective urls, so polls/ will lead to the polls page
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('resume.urls')),
