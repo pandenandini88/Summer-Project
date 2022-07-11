@@ -7,10 +7,10 @@ from django.http import HttpResponse
 htmlLinks = "<pre><a href = 'http://127.0.0.1:8000'>Home Page</a>      <a href = 'http://127.0.0.1:8000/resume/'>Resume Page</a></pre>"
 
 def index(request):
-    htmlHomeTitle = "<center><h1> Home Page </h1></center>"
-    return HttpResponse(htmlLinks + htmlHomeTitle)
+    htmlHomeTitle = "l"
+    return render(request, "home.html")
     
 
 def resume(request):
     htmlResumeTitle = "<center><h1> Resume Page </h1></center>"
-    return HttpResponse(htmlLinks + htmlResumeTitle)
+    return render(request, "resume.html")
