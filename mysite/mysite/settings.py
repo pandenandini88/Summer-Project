@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #'polls.app.PollsConfig',
+    'polls.apps.PollsConfig',
     'resume',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -107,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC-05:00'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
