@@ -24,4 +24,12 @@ python mysite/manage.py migrate
 python mysite/manage.py runserver
 ```
 
-As of now, not much can be done, but you can add/edit questions by going to admin/ and enter admin as the username, password as the password.
+### Environment Variables
+
+| variable      | type | default     | description                                    |
+| ------------- | ---- | ----------- | ---------------------------------------------- |
+| SECRET_KEY    | str  | None        | The django secret key                          |
+| DEBUG         | str  | 'true'      | Set "true" to debug, "false" to turn off debug |
+| ALLOWED_HOSTS | list | 'localhost' | A comma-separated list of allowed hosts        |
+| DATABASE_NAME | str  | 'db'        | The name of the sqlite database                |
+
