@@ -33,3 +33,31 @@ python mysite/manage.py runserver
 | ALLOWED_HOSTS | list | 'localhost' | A comma-separated list of allowed hosts        |
 | DATABASE_NAME | str  | 'db'        | The name of the sqlite database                |
 
+## Endpoints
+
+These are the pages you can access:
+
+### /
+
+This is the homepage
+
+### /resume
+
+This is my resume
+
+### /polls
+
+This is the polls app
+
+### /admin
+
+This is the default admin panel
+
+## Contributing
+
+Before committing, please format your code with `python black`:
+
+```bash
+pip install black
+python -m black {source_file_or_directory}
+```
