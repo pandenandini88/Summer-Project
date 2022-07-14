@@ -12,6 +12,16 @@ To run this project:
 
 3. Finally, enter the command `python -m pip install -r requirements.txt` (if on Linux/Apple) or `py -m pip install  -r requirements.txt` (if on Windows).
 
-To use this porject:
+## Running the Development Site
+
+Running the development site is as easy as running any django site!
+
+```bash
+# Run migrations
+python mysite/manage.py migrate
+
+# Run the dev server
+python mysite/manage.py runserver
+```
 
 As of now, not much can be done, but you can add/edit questions by going to admin/ and enter admin as the username, password as the password.
