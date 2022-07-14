@@ -10,7 +10,7 @@ To run this project:
 
 2. Next, it is recommended that you set up a virtual environment, which can be done with this tutorial: https://docs.python.org/3/tutorial/venv.html
 
-3. Finally, enter the command python -m pip install Django (if on Linux/Apple) or py -m pip install Django (if on Windows).
+3. Finally, enter the command `python -m pip install -r requirements.txt` (if on Linux/Apple) or `py -m pip install  -r requirements.txt` (if on Windows).
 
 To use this porject:
 
