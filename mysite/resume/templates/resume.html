@@ -1,13 +1,27 @@
+{% load static %}
+
 <!DOCTYPE html>
-<html>
+
 <head>
-    <title>Home Page</title>
+  <title>Home Page</title>
+  <link rel="stylesheet" href="{% static 'resume/resume.css' %}"
 </head>
+
 <body>
+  <div class="menu-container">
+    <ul class="navigation">
 
-    <pre><a href = "{% url 'index' %}">Home Page</a>      <a href = "{% url 'resume' %}">Resume Page</a>      <a href = "{% url 'poll_index' %}">Polls Page</a></pre>
-    <center><h1> Resume Page </h1></center>
+        <li><a href = "{% url 'index' %}">Home Page</a></li>
+        <li><a href = "{% url 'resume' %}">Resume Page</a></li>
+        <li><a href = "{% url 'poll_index' %}">Polls Page</a></li>
+         
+      </ul>
+  </div>
+  <div>
+    <h1 id="header">Resume Page</h1>
+  </div>
 
+  <script src="{% static 'resume/home.js' %}"></script>
 </body>
 
 </html>
