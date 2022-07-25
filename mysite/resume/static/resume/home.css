@@ -5,7 +5,7 @@
 
     list-style: none;
     margin: 0; 
-    background: deepskyblue;
+    background: #CB8DFF;
 }
 
 .title {
@@ -20,7 +20,7 @@
   }
   
   .navigation a:hover {
-    background: #1565C0;
+    background: #CB8DFF;
   }
 
 @media all and (max-width: 800px) {
