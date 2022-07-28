@@ -22,19 +22,28 @@
     
   </div>
   <div>
-    <h1 id="header">Home Page</h1>
+    <h1 id="header">High School Programmer</h1>
+    <h2>Hi! I am Nandini Pande, a high school developer planning to study computer science. I have experience creating a variety of different projects.</h2>
   </div>
 
+
+<div id="box">
+
+<div><img src="{% static 'resume/finalwel.jpg' %}" alt="Welcome!" width="900" height="500" id="box"></div>
+
+</div>
 <p>Welcome to my website! I built this website all by myself using Django. It's not still finished yet, but I've been working on it 
   for a month or two by now. I still haven't decided on the "point" of this website, so for now there might be a mixture of professional stuff
-  (like my resume) and some fun lists (maybe I'll rank all the Smash Bros. characters? Who knows?) 
+  (like my resume) and some fun lists (maybe I'll rank all the Smash Bros. characters? Who knows?). Make sure to watch my Github Repository for updates!
 </p>
-
-<div class = "confetti"></div>
-
 
 
   <script src="{% static 'resume/home.js' %}"></script>
+  <script src="{% static 'resume/confetti.js' %}"></script>
+  <script>
+    confetti.start();
+    confetti.stop();
+  </script>
 </body>
 
 </html>
