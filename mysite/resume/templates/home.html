@@ -3,10 +3,8 @@
 <!DOCTYPE html>
 
 <head>
-  <div class = "title">
   <title>Home Page</title>
-</div>
-  <link rel="stylesheet" href="{% static 'resume/home.css' %}"
+  <link rel="stylesheet" href="{% static 'resume/home.css' %}">
 </head>
 
 <body>
@@ -22,14 +20,14 @@
     
   </div>
   <div>
-    <h1 id="header">High School Programmer</h1>
+    <h1 id="header" class="title">High School Programmer</h1>
     <h2>Hi! I am Nandini Pande, a high school developer planning to study computer science. I have experience creating a variety of different projects.</h2>
   </div>
 
 
 <div id="box">
 
-<div><img src="{% static 'resume/finalwel.jpg' %}" alt="Welcome!" width="900" height="500" id="box"></div>
+<div><img src="{% static 'resume/finalwel (2).jpg' %}" alt="Welcome!" width="900" height="500" id="box"></div>
 
 </div>
 <p>Welcome to my website! I built this website all by myself using Django. It's not still finished yet, but I've been working on it 
@@ -38,11 +36,22 @@
 </p>
 
 
-  <script src="{% static 'resume/home.js' %}"></script>
-  <script src="{% static 'resume/confetti.js' %}"></script>
+<script src="{% static 'resume/home.js' %}"></script>
+<script src="{% static 'resume/home.js' %}"></script>
   <script>
-    confetti.start();
-    confetti.stop();
+    const start = () => {
+      setTimeout(function(){
+        confetti.start();
+      });
+    };
+
+    const stop = () => {
+      setTimeout(function(){
+        confetti.stop()
+      })
+    }
+
+    start();
   </script>
 </body>
 
