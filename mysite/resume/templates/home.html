@@ -2,59 +2,60 @@
 
 <!DOCTYPE html>
 
+<!-- Tells the computer to apply the stylistic choices described in home.css-->
 <head>
   <title>Home Page</title>
   <link rel="stylesheet" href="{% static 'resume/home.css' %}">
 </head>
 
 <body>
+
+<!-- Sets up links to access different pages of the website. -->
   <div class="menu-container">
-
   <ul class="navigation">
-
     <li><a href = "{% url 'index' %}">Home Page</a></li>
     <li><a href = "{% url 'resume' %}">Resume Page</a></li>
-    <li><a href = "{% url 'poll_index' %}">Polls Page</a></li>
-     
+    <li><a href = "{% url 'poll_index' %}">Polls Page</a></li> 
   </ul>
-    
   </div>
 
+  <!-- Adds the title to top of the page, the id allows it to change colors, and the class allows it to be centered -->
   <div class="menu-container">
     <h1 id="header" class="center">Nandini Pande</h1>
     <h3>Hi! I am a high school developer planning to study computer science. I have experience creating a variety of different projects. Feel free to check them out!</h3>
   </div>
 
-
+<!-- Implements home page image, and sets proper size -->
 <div class="menu-container">
-
 <img src="{% static 'resume/finalwel (2).jpg' %}" alt="Welcome!" width="900" height="500" class="center">
 
-
+<!-- Text under the welcome page. -->
 <p class="center">Welcome to my website! I built this website all by myself using Django. It's not still finished yet, but I've been working on it 
   for a month or two by now. I still haven't decided on the "point" of this website, so for now there might be a mixture of professional stuff
   (like my resume) and some fun lists (maybe I'll rank all the Smash Bros. characters? Who knows?). Make sure to watch my Github Repository for updates!
 </p>
-
 </div>
 
+<!-- Links the code that allows the title to color change. -->
 <script src="{% static 'resume/home.js' %}"></script>
+
+<!-- Links code that allows the confetti falling animation to play. -->
 <script src="{% static 'resume/confetti.js' %}"></script>
   <script>
     //starts confetti
     const start = () => {
       setTimeout(function(){
         confetti.start();
-      }, 1000);
+      }, 1000); //indicates time, so 1 second
     };
 
     //stops confetti
     const stop = () => {
       setTimeout(function(){
         confetti.stop()
-      }, 5000)
+      }, 5000) //indicates time, so 5 seconds
     }
-
+    
     start();
     stop();
   </script>

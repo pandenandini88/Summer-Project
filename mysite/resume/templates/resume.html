@@ -2,25 +2,26 @@
 
 <!DOCTYPE html>
 
+<!-- Links the page to the proper styling sheet -->
 <head>
   <title>Home Page</title>
-  <link rel="stylesheet" href="{% static 'resume/resume.css' %}"
+  <link rel="stylesheet" href="{% static 'resume/resume.css' %}">
 </head>
 
 <body>
+<!-- Sets up links to access different pages of the website. -->
   <div class="menu-container">
     <ul class="navigation">
-
-        <li><a href = "{% url 'index' %}">Home Page</a></li>
-        <li><a href = "{% url 'resume' %}">Resume Page</a></li>
-        <li><a href = "{% url 'poll_index' %}">Polls Page</a></li>
-         
-      </ul>
-  </div>
-  <div>
-    <h1 id="header">Resume Page</h1>
+      <li><a href = "{% url 'index' %}">Home Page</a></li>
+      <li><a href = "{% url 'resume' %}">Resume Page</a></li>
+      <li><a href = "{% url 'poll_index' %}">Polls Page</a></li>
+    </ul>
+  
+<!-- Adds title to top of page, id makes it change color, class makes it centered -->
+    <h1 id="header" class="center">Resume Page</h1>
   </div>
 
+<!-- Body text -->
   Alright, so not to brag here but here of some of my acheivements:
 
   <p><b>Technical Skills</b></p>
@@ -51,7 +52,7 @@
     <li>A 4 on AP Computer Science A (it was a self study)</li>
 </ul>
 
-<p>I also have a weighted GPA of around 4.5</p>
+<p>I also have a weighted GPA of around 4.5.</p>
 
 <b>Extracurriculars</b>
 
@@ -66,16 +67,13 @@
     
 </ul>
 
+<!-- Relavent links to Devpost and Github -->
 Interested in my projects? Check out my Devpost <a href = "https://devpost.com/nandinimp?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">here</a>. 
 <p>Want to see how I made this project? Check out the code for this website <a href = "https://github.com/pandenandini88/Summer-Project">here</a>. </p>
 
 </body>
 
-
-
-
-
-  <script src="{% static 'resume/home.js' %}"></script>
+<!-- Provides code for title to change color. -->
+<script src="{% static 'resume/home.js' %}"></script>
 </body>
-
 </html>
