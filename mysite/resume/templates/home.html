@@ -26,33 +26,37 @@
   </div>
 
 
-<div id="box">
+<div class="menu-container">
 
-<div><img src="{% static 'resume/finalwel (2).jpg' %}" alt="Welcome!" width="900" height="500" id="box"></div>
+<img src="{% static 'resume/finalwel (2).jpg' %}" alt="Welcome!" width="900" height="500" class="center">
 
-</div>
-<p>Welcome to my website! I built this website all by myself using Django. It's not still finished yet, but I've been working on it 
+
+<p class="center">Welcome to my website! I built this website all by myself using Django. It's not still finished yet, but I've been working on it 
   for a month or two by now. I still haven't decided on the "point" of this website, so for now there might be a mixture of professional stuff
   (like my resume) and some fun lists (maybe I'll rank all the Smash Bros. characters? Who knows?). Make sure to watch my Github Repository for updates!
 </p>
 
+</div>
 
 <script src="{% static 'resume/home.js' %}"></script>
 <script src="{% static 'resume/confetti.js' %}"></script>
   <script>
+    //starts confetti
     const start = () => {
       setTimeout(function(){
         confetti.start();
-      });
+      }, 1000);
     };
 
+    //stops confetti
     const stop = () => {
       setTimeout(function(){
         confetti.stop()
-      })
+      }, 5000)
     }
 
     start();
+    stop();
   </script>
 </body>
 
