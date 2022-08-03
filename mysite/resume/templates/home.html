@@ -20,14 +20,13 @@
   </div>
 
   <!-- Adds the title to top of the page, the id allows it to change colors, and the class allows it to be centered -->
-  <div class="menu-container">
-    <h1 id="header" class="center">Nandini Pande</h1>
-    <h3>Hi! I am a high school developer planning to study computer science. I have experience creating a variety of different projects. Feel free to check them out!</h3>
-  </div>
-
+  
+  <h1 id="header" class="center">Nandini Pande</h1>
+  <h3 class="center">Hi! I am a high school developer planning to study computer science. I have experience creating a variety of different projects. Feel free to check them out!</h3>
+  
 <!-- Implements home page image, and sets proper size -->
-<div class="menu-container">
-<img src="{% static 'resume/finalwel (2).jpg' %}" alt="Welcome!" width="900" height="500" class="center">
+
+<img class="center" src="{% static 'resume/finalwel (2).jpg' %}" alt="Welcome!" width="900" height="500">
 
 <!-- Text under the welcome page. -->
 <p class="center">Welcome to my website! I built this website all by myself using Django. It's not still finished yet, but I've been working on it 
@@ -55,7 +54,7 @@
         confetti.stop()
       }, 5000) //indicates time, so 5 seconds
     }
-    
+
     start();
     stop();
   </script>
