@@ -16,7 +16,7 @@ def index(request):
     Returns:
         render: A template to render
     """
-    return render(request, "index.html")
+    return render(request, "home.html")
 
 
 # This function takes a request from the user and displays elements on to the resume page. resume.html can be found under the templates folder.
